@@ -75,5 +75,5 @@ local config = {
     }
 }
 
-vim.api.nvim_set_keymap("n", "<C-e>", ":NvimTreeToggle<cr>" ,{silent = true, noremap = true})
+vim.api.nvim_set_keymap("n", "<C-e>", ":NvimTreeFocus<cr>" ,{silent = true, noremap = true})
 tree.setup(config)
