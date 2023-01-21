@@ -7,8 +7,8 @@ local opt = {noremap = true, silent = true}
 map("n", "<A-v>", ":vsp<CR>", opt)
 map("n", "<A-c>", ":sp<CR>", opt)
 
-map("n", "<A-x>", "<C-w>c", opt)
-map("n", "<A-z>", "<C-w>o", opt)
+map("n", "<A-w>", "<C-w>c", opt)
+-- map("n", "<A-z>", "<C-w>o", opt)
 
 map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)

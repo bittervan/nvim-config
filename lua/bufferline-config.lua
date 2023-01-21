@@ -33,10 +33,11 @@ bufferline.setup({
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true}
 
-map("n", "<C-n>", ":BufferLineCycleNext<CR>", opt)
 -- 关闭
 --"moll/vim-bbye"
-map("n", "<C-w>", ":Bdelete!<CR>", opt)
-map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
-map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
-map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
+map("n", "<C-w>", ":Bdelete<CR>", opt)
+map("n", "<C-j>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<C-k>", ":BufferLineCyclePrev<CR>", opt)
+-- map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
+-- map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
+-- map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
